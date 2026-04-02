@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Y2rd Store - نموذج أولي</title>
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800;900&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg-body: #f8f9fa;
@@ -13,7 +15,7 @@
       --border-color: #e5e7eb;
       --input-bg: #ffffff;
       --header-bg: rgba(255, 255, 255, 0.98);
-      --primary: #6b7d73;
+      --primary: #717d78;
       --chip-bg: #f3f4f6;
     }
 
@@ -31,7 +33,7 @@
 
     * {
       box-sizing: border-box;
-      font-family: system-ui, -apple-system, 'Segoe UI', Arial, sans-serif !important;
+      font-family: 'Tajawal', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif !important;
     }
 
     .hidden{display:none!important}.fixed{position:fixed}.sticky{position:sticky}.top-0{top:0}.bottom-0{bottom:0}.left-0{left:0}.right-0{right:0}.inset-0{inset:0}.z-\[100\]{z-index:100}.z-\[300\]{z-index:300}.max-w-4xl{max-width:56rem}.max-w-sm{max-width:24rem}.mx-auto{margin-left:auto;margin-right:auto}.p-2{padding:.5rem}.p-3{padding:.75rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.pb-3{padding-bottom:.75rem}.pt-4{padding-top:1rem}.pr-2{padding-right:.5rem}.mt-2{margin-top:.5rem}.mb-1{margin-bottom:.25rem}.mb-3{margin-bottom:.75rem}.mb-4{margin-bottom:1rem}.space-y-2>*+*{margin-top:.5rem}.space-y-3>*+*{margin-top:.75rem}.space-y-2{display:block}.flex{display:flex}.grid{display:grid}.items-center{align-items:center}.items-start{align-items:flex-start}.items-baseline{align-items:baseline}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:.25rem}.gap-2{gap:.5rem}.w-full{width:100%}.w-8{width:2rem}.h-8{height:2rem}.h-9{height:2.25rem}.rounded-lg{border-radius:.5rem}.rounded-xl{border-radius:.75rem}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.border{border:1px solid var(--border-color)}.border-t{border-top:1px solid var(--border-color)}.border-gray-200{border-color:var(--border-color)}.bg-white{background:#fff}.bg-gray-50{background:#f9fafb}.bg-gray-100{background:#f3f4f6}.text-white{color:#fff}.text-black{color:#000}.text-left{text-align:left}.text-right{text-align:right}.text-center{text-align:center}.text-xs{font-size:.75rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.text-xl{font-size:1.25rem}.text-\[9px\]{font-size:9px}.text-\[10px\]{font-size:10px}.font-black{font-weight:900}.font-bold{font-weight:700}.leading-none{line-height:1}.uppercase{text-transform:uppercase}.opacity-40{opacity:.4}.opacity-50{opacity:.5}.opacity-60{opacity:.6}.shadow-sm{box-shadow:0 1px 2px rgba(0,0,0,.06)}.shadow-2xl{box-shadow:0 20px 25px rgba(0,0,0,.15)}.backdrop-blur-md{backdrop-filter:blur(12px)}.overflow-y-auto{overflow-y:auto}.flex-col{flex-direction:column}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.flex-wrap{flex-wrap:wrap}.min-w-0{min-width:0}.whitespace-nowrap{white-space:nowrap}.block{display:block}
@@ -54,6 +56,7 @@
 
     main {
       background: transparent;
+      padding-bottom: 96px;
     }
 
     #lang-btn,
@@ -123,22 +126,22 @@
     }
 
     .header-id-input {
-      width: 86px;
-      height: 28px;
+      width: 124px;
+      height: 34px;
       border: 1px solid var(--border-color);
       border-radius: 999px;
       background: var(--bg-card);
       color: var(--primary);
       text-align: center;
-      font-size: 10px;
+      font-size: 12px;
       font-weight: 900;
-      padding: 0 10px;
+      padding: 0 14px;
       outline: none;
     }
 
     .header-id-input::placeholder {
       color: var(--primary);
-      opacity: 0.7;
+      opacity: 0.55;
     }
 
     body.dark-mode .header-id-input {
@@ -581,6 +584,7 @@
 
     .responsive-grid {
       display: grid;
+      padding-bottom: 72px;
       grid-template-columns: repeat(5, minmax(0, 1fr));
       gap: 12px;
     }
@@ -919,10 +923,10 @@
       }
 
       .header-id-input {
-        width: 72px;
-        height: 26px;
-        font-size: 9px;
-        padding: 0 8px;
+        width: 96px;
+        height: 30px;
+        font-size: 10px;
+        padding: 0 10px;
       }
 
       .toolbar-actions {
@@ -1012,6 +1016,7 @@
 
       main {
         padding: 10px;
+        padding-bottom: 132px;
       }
 
       .responsive-grid {
@@ -1124,6 +1129,7 @@
       .responsive-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 8px;
+        padding-bottom: 96px;
       }
 
       .machine-card {
@@ -1194,6 +1200,10 @@
         padding-bottom: 212px;
       }
 
+      .responsive-grid {
+        padding-bottom: 108px;
+      }
+
       .top-brand h1 {
         max-width: 92px;
       }
@@ -1235,7 +1245,7 @@
         <div class="top-brand-center">
           <div class="header-id-wrap">
             <span class="header-id-label">البطاقة التعريفية</span>
-            <input id="header-user-input" type="text" class="header-id-input" placeholder="#000" value="#000" />
+            <input id="header-user-input" type="text" class="header-id-input" placeholder="اكتبها هنا" value="" />
           </div>
         </div>
       </div>
@@ -1300,7 +1310,7 @@
                 <option value="2000">2000</option>
                 <option value="3000">3000</option>
                 <option value="4000">4000</option>
-                <option value="5000" selected>5000</option>
+                <option value="5000">5000</option>
                 <option value="6000">6000</option>
                 <option value="7000">7000</option>
                 <option value="8000">8000</option>
@@ -1332,12 +1342,7 @@
     </div>
 
     <div id="header-collapsible" class="max-w-4xl mx-auto p-3 space-y-3">
-      <div class="controls-row w-full pb-1">
-        <div class="control-block id-block">
-          <span class="control-label">البطاقة التعريفية</span>
-          <input type="text" id="user-id" placeholder="#000" class="compact-input text-center uppercase font-bold" />
-        </div>
-      </div>
+</div>
     </div>
   </header>
 
@@ -1352,7 +1357,7 @@
           <span class="text-[9px] font-black uppercase opacity-60">الكمية المختارة</span>
           <div class="flex items-baseline gap-1">
             <span id="current-total" class="text-xl font-black leading-none mono">0</span>
-            <span class="text-xs opacity-50">/ <span id="target-display" class="mono">5000</span></span>
+            <span class="text-xs opacity-50">/ <span id="target-display" class="mono">0</span></span>
           </div>
         </div>
         <div class="progress-bar flex-1" style="height:5px"><div id="progress-fill"></div></div>
@@ -1391,50 +1396,61 @@
   <script>
     const machineTranslations = {
       Bakery: { ar: 'المخبز', en: 'Bakery' },
-      'BBQ Grill': { ar: 'شواية باربكيو', en: 'BBQ Grill' },
-      Dairy: { ar: 'الألبان', en: 'Dairy' },
-      'Sugar Mill': { ar: 'مطحنة السكر', en: 'Sugar Mill' },
+      Dairy: { ar: 'مصنع الألبان', en: 'Dairy' },
+      'Sugar Mill': { ar: 'طاحونة سكر', en: 'Sugar Mill' },
+      'Popcorn Pot': { ar: 'آلة الفشار', en: 'Popcorn Pot' },
+      'BBQ Grill': { ar: 'شواية اللحم', en: 'BBQ Grill' },
       'Pie Oven': { ar: 'فرن الفطائر', en: 'Pie Oven' },
-      'Popcorn Pot': { ar: 'قدر الفشار', en: 'Popcorn Pot' },
-      Loom: { ar: 'النول', en: 'Loom' },
-      'Sewing Machine': { ar: 'آلة الخياطة', en: 'Sewing Machine' },
-      'Cake Oven': { ar: 'فرن الكيك', en: 'Cake Oven' },
-      'Juice Press': { ar: 'عصارة العصير', en: 'Juice Press' },
+      Loom: { ar: 'منسج', en: 'Loom' },
+      'Sewing Machine': { ar: 'آلة الحياكة', en: 'Sewing Machine' },
+      'Cake Oven': { ar: 'فرن الكعك', en: 'Cake Oven' },
       'Ice Cream Maker': { ar: 'آلة الآيس كريم', en: 'Ice Cream Maker' },
+      'Jam Maker': { ar: 'آلة صناعة المربى', en: 'Jam Maker' },
+      'Juice Press': { ar: 'عصارة', en: 'Juice Press' },
+      'Coffee Kiosk': { ar: 'كشك القهوة', en: 'Coffee Kiosk' },
       Smelter: { ar: 'المصهر', en: 'Smelter' },
+      'Sauce Maker': { ar: 'آلة الصلصات', en: 'Sauce Maker' },
+      'Salad Bar': { ar: 'بار السلطات', en: 'Salad Bar' },
+      'Sandwich Bar': { ar: 'بار الساندويتش', en: 'Sandwich Bar' },
+      'Soup Kitchen': { ar: 'مطبخ الحساء', en: 'Soup Kitchen' },
+      'Sushi Bar': { ar: 'بار السوشي', en: 'Sushi Bar' },
+      'Pasta Maker': { ar: 'آلة الباستا', en: 'Pasta Maker' },
+      'Candy Machine': { ar: 'آلة الحلوى', en: 'Candy Machine' },
+      'Candle Maker': { ar: 'آلة الشموع', en: 'Candle Maker' },
+      'Flower Shop': { ar: 'متجر الزهور', en: 'Flower Shop' },
+      'Hat Maker': { ar: 'آلة القبعات', en: 'Hat Maker' },
+      'Donut Maker': { ar: 'آلة الدونات', en: 'Donut Maker' },
+      'Taco Kitchen': { ar: 'مطبخ التاكو', en: 'Taco Kitchen' },
+      'Tea Stand': { ar: 'ركن الشاي', en: 'Tea Stand' },
+      'Smoothie Mixer': { ar: 'خلاط السموثي', en: 'Smoothie Mixer' },
+      'Waffle Maker': { ar: 'آلة الوافل', en: 'Waffle Maker' },
+      'Omelet Station': { ar: 'محطة الأومليت', en: 'Omelet Station' },
+      'Hot Dog Stand': { ar: 'كشك الهوت دوج', en: 'Hot Dog Stand' },
+      'Preservation Station': { ar: 'محطة الحفظ', en: 'Preservation Station' },
+      'Essential Oils Lab': { ar: 'مختبر الزيوت العطرية', en: 'Essential Oils Lab' },
+      'Bath Kiosk': { ar: 'كشك منتجات الاستحمام', en: 'Bath Kiosk' },
+      'Yogurt Maker': { ar: 'آلة الزبادي', en: 'Yogurt Maker' },
+      'Milkshake Bar': { ar: 'بار الميلك شيك', en: 'Milkshake Bar' },
+      'Fudge Shop': { ar: 'متجر الفدج', en: 'Fudge Shop' },
+      'Porridge Bar': { ar: 'بار العصيدة', en: 'Porridge Bar' },
+      'Fishing Area': { ar: 'منطقة الصيد', en: 'Fishing Area' },
+      'Fishing Boat': { ar: 'قارب الصيد', en: 'Fishing Boat' },
+      'Lobster Pool': { ar: 'بركة سرطان البحر', en: 'Lobster Pool' },
+      'Duck Salon': { ar: 'صالون البط', en: 'Duck Salon' },
+      'Bee Tree': { ar: 'شجرة النحل', en: 'Bee Tree' },
+      'Squirrel Tree': { ar: 'شجرة السنجاب', en: 'Squirrel Tree' },
       'Pizza Oven': { ar: 'فرن البيتزا', en: 'Pizza Oven' },
-      'Jam Maker': { ar: 'آلة المربى', en: 'Jam Maker' },
       Jeweler: { ar: 'صائغ المجوهرات', en: 'Jeweler' },
       'Honey Extractor': { ar: 'مستخرج العسل', en: 'Honey Extractor' },
-      'Sauce Maker': { ar: 'آلة الصلصات', en: 'Sauce Maker' },
-      'Coffee Kiosk': { ar: 'كشك القهوة', en: 'Coffee Kiosk' },
-      'Soup Kitchen': { ar: 'مطبخ الشوربة', en: 'Soup Kitchen' },
-      'Candle Maker': { ar: 'صانع الشموع', en: 'Candle Maker' },
-      'Candy Machine': { ar: 'آلة الحلوى', en: 'Candy Machine' },
-      Sushi: { ar: 'السوشي', en: 'Sushi Bar' },
-      'Salad Bar': { ar: 'بار السلطات', en: 'Salad Bar' },
-      Sandwich: { ar: 'محل الساندويتش', en: 'Sandwich Bar' },
-      'Smoothie Maker': { ar: 'آلة السموذي', en: 'Smoothie Maker' },
-      'Pasta Maker': { ar: 'آلة الباستا', en: 'Pasta Maker' },
-      'Tea Stand': { ar: 'ركن الشاي', en: 'Tea Stand' },
-      Donut: { ar: 'آلة الدونات', en: 'Donut Maker' },
-      Taco: { ar: 'ركن التاكو', en: 'Taco Kitchen' },
-      Omelet: { ar: 'ركن الأومليت', en: 'Omelet Station' },
       'Fondue Pot': { ar: 'قدر الفوندو', en: 'Fondue Pot' },
-      Bath: { ar: 'منضدة الحمام', en: 'Bath Kiosk' },
-      'Yogurt Maker': { ar: 'آلة الزبادي', en: 'Yogurt Maker' },
-      Wok: { ar: 'المقلاة الصينية', en: 'Wok Kitchen' },
-      'Waffle Maker': { ar: 'آلة الوافل', en: 'Waffle Maker' },
-      Porridge: { ar: 'ركن العصيدة', en: 'Porridge Bar' },
-      Milkshake: { ar: 'آلة الميلك شيك', en: 'Milkshake Bar' },
-      'Flower Shop': { ar: 'متجر الزهور', en: 'Flower Shop' },
       'Deep Fryer': { ar: 'القلاية', en: 'Deep Fryer' },
       'Pottery Studio': { ar: 'ورشة الفخار', en: 'Pottery Studio' },
-      'Fishing Area': { ar: 'منطقة الصيد', en: 'Fishing Area' },
-      'Lobster Pool': { ar: 'بركة الكركند', en: 'Lobster Pool' },
-      'Duck Salon': { ar: 'صالون البط', en: 'Duck Salon' },
-      'Peanut Bush': { ar: 'شجيرة الفول السوداني', en: 'Peanut Bush' },
-      'Preservation Station': { ar: 'محطة الحفظ', en: 'Preservation Station' },
+      'Wok Kitchen': { ar: 'مطبخ الووك', en: 'Wok Kitchen' },
+      'Perfumerie': { ar: 'مصنع العطور', en: 'Perfumerie' },
+      'Cupcake Maker': { ar: 'آلة الكب كيك', en: 'Cupcake Maker' },
+      'Pasta Kitchen': { ar: 'مطبخ الباستا', en: 'Pasta Kitchen' },
+      'Honey Extractor': { ar: 'مستخرج العسل', en: 'Honey Extractor' },
+      'Stew Pot': { ar: 'قدر اليخنة', en: 'Stew Pot' },
       Other: { ar: 'أخرى', en: 'Other' }
     };
 
@@ -1724,7 +1740,7 @@
   {
     "input_name": "Cookie",
     "official_name": "Cookie",
-    "name_ar": "كوكي",
+    "name_ar": "كوكيز",
     "level": 10,
     "machine": "Bakery",
     "image": "https://hayday.fandom.com/wiki/Special:FilePath/Cookie.png",
@@ -2331,7 +2347,7 @@
     "level": 44,
     "machine": "Lobster Pool",
     "image": "https://static.wikia.nocookie.net/hayday/images/Lobster_Tail.png",
-    "machine_ar": "بركة الكركند"
+    "machine_ar": "بركة سرطان البحر"
   },
   {
     "input_name": "Frutti di Mare Pizza",
@@ -2363,11 +2379,11 @@
   {
     "input_name": "Lobster Soup",
     "official_name": "Lobster Soup",
-    "name_ar": "Lobster شوربة",
+    "name_ar": "Lobster حساء",
     "level": 46,
     "machine": "Soup Kitchen",
     "image": "https://hayday.fandom.com/wiki/Special:FilePath/Lobster%20Soup.png",
-    "machine_ar": "مطبخ الشوربة"
+    "machine_ar": "مطبخ الحساء"
   },
   {
     "input_name": "Raspberry Mocha",
@@ -2390,11 +2406,11 @@
   {
     "input_name": "Tomato Soup",
     "official_name": "Tomato Soup",
-    "name_ar": "طماطم شوربة",
+    "name_ar": "طماطم حساء",
     "level": 47,
     "machine": "Soup Kitchen",
     "image": "https://hayday.fandom.com/wiki/Special:FilePath/Tomato%20Soup.png",
-    "machine_ar": "مطبخ الشوربة"
+    "machine_ar": "مطبخ الحساء"
   },
   {
     "input_name": "Beeswax",
@@ -2444,11 +2460,11 @@
   {
     "input_name": "Pumpkin Soup",
     "official_name": "Pumpkin Soup",
-    "name_ar": "Pumpkin شوربة",
+    "name_ar": "Pumpkin حساء",
     "level": 49,
     "machine": "Soup Kitchen",
     "image": "https://hayday.fandom.com/wiki/Special:FilePath/Pumpkin%20Soup.png",
-    "machine_ar": "مطبخ الشوربة"
+    "machine_ar": "مطبخ الحساء"
   },
   {
     "input_name": "Rustic Bouquet",
@@ -2489,11 +2505,11 @@
   {
     "input_name": "Asparagus Soup",
     "official_name": "Asparagus Soup",
-    "name_ar": "Asparagus شوربة",
+    "name_ar": "Asparagus حساء",
     "level": 51,
     "machine": "Soup Kitchen",
     "image": "https://hayday.fandom.com/wiki/Special:FilePath/Asparagus%20Soup.png",
-    "machine_ar": "مطبخ الشوربة"
+    "machine_ar": "مطبخ الحساء"
   },
   {
     "input_name": "Caramel Apple",
@@ -2543,11 +2559,11 @@
   {
     "input_name": "Fish Soup",
     "official_name": "Fish Soup",
-    "name_ar": "سمك شوربة",
+    "name_ar": "سمك حساء",
     "level": 53,
     "machine": "Soup Kitchen",
     "image": "https://hayday.fandom.com/wiki/Special:FilePath/Fish%20Soup.png",
-    "machine_ar": "مطبخ الشوربة"
+    "machine_ar": "مطبخ الحساء"
   },
   {
     "input_name": "Bean Dip",
@@ -2786,11 +2802,11 @@
   {
     "input_name": "Cabbage Soup",
     "official_name": "Cabbage Soup",
-    "name_ar": "Cabbage شوربة",
+    "name_ar": "Cabbage حساء",
     "level": 65,
     "machine": "Soup Kitchen",
     "image": "https://hayday.fandom.com/wiki/Special:FilePath/Cabbage%20Soup.png",
-    "machine_ar": "مطبخ الشوربة"
+    "machine_ar": "مطبخ الحساء"
   },
   {
     "input_name": "Chocolate Pie",
@@ -3020,11 +3036,11 @@
   {
     "input_name": "Onion Soup",
     "official_name": "Onion Soup",
-    "name_ar": "Onion شوربة",
+    "name_ar": "Onion حساء",
     "level": 72,
     "machine": "Soup Kitchen",
     "image": "https://hayday.fandom.com/wiki/Special:FilePath/Onion%20Soup.png",
-    "machine_ar": "مطبخ الشوربة"
+    "machine_ar": "مطبخ الحساء"
   },
   {
     "input_name": "Top Hat",
@@ -3056,11 +3072,11 @@
   {
     "input_name": "Noodle Soup",
     "official_name": "Noodle Soup",
-    "name_ar": "Noodle شوربة",
+    "name_ar": "Noodle حساء",
     "level": 73,
     "machine": "Soup Kitchen",
     "image": "https://hayday.fandom.com/wiki/Special:FilePath/Noodle%20Soup.png",
-    "machine_ar": "مطبخ الشوربة"
+    "machine_ar": "مطبخ الحساء"
   },
   {
     "input_name": "Rice Noodles",
@@ -3263,11 +3279,11 @@
   {
     "input_name": "Potato Soup",
     "official_name": "Potato Soup",
-    "name_ar": "بطاطس شوربة",
+    "name_ar": "بطاطس حساء",
     "level": 78,
     "machine": "Soup Kitchen",
     "image": "https://hayday.fandom.com/wiki/Special:FilePath/Potato%20Soup.png",
-    "machine_ar": "مطبخ الشوربة"
+    "machine_ar": "مطبخ الحساء"
   },
   {
     "input_name": "Sesame Brittle",
@@ -3393,7 +3409,7 @@
     "level": 81,
     "machine": "Soup Kitchen",
     "image": "https://hayday.fandom.com/wiki/Special:FilePath/Bell%20Pepper%20Soup.png",
-    "machine_ar": "مطبخ الشوربة"
+    "machine_ar": "مطبخ الحساء"
   },
   {
     "input_name": "Chocolate Fondue",
@@ -3632,11 +3648,11 @@
   {
     "input_name": "Broccoli Soup",
     "official_name": "Broccoli Soup",
-    "name_ar": "Broccoli شوربة",
+    "name_ar": "Broccoli حساء",
     "level": 87,
     "machine": "Soup Kitchen",
     "image": "https://hayday.fandom.com/wiki/Special:FilePath/Broccoli%20Soup.png",
-    "machine_ar": "مطبخ الشوربة"
+    "machine_ar": "مطبخ الحساء"
   },
   {
     "input_name": "Nachos",
@@ -4226,11 +4242,11 @@
   {
     "input_name": "Mushroom Soup",
     "official_name": "Mushroom Soup",
-    "name_ar": "Mushroom شوربة",
+    "name_ar": "Mushroom حساء",
     "level": 104,
     "machine": "Soup Kitchen",
     "image": "https://hayday.fandom.com/wiki/Special:FilePath/Mushroom%20Soup.png",
-    "machine_ar": "مطبخ الشوربة"
+    "machine_ar": "مطبخ الحساء"
   },
   {
     "input_name": "Tropical Smoothie",
@@ -4415,7 +4431,7 @@
   {
     "input_name": "Cookie Cupcake",
     "official_name": "Cookie Cupcake",
-    "name_ar": "كوكي Cupكعكة",
+    "name_ar": "كوكيز Cupكعكة",
     "level": 114,
     "machine": "Cupcake Maker",
     "image": "https://hayday.fandom.com/wiki/Special:FilePath/Cookie%20Cupcake.png",
@@ -4702,11 +4718,11 @@
   "Iron Bracelet": "./images/Iron Bracelet.png",
   "Espreso": "./images/Espresso.png",
   "Honey Apple Cake": "./images/Honey Apple Cake.png",
-  "Latte": "./images/Caff├¿ Latte.png",
+  "Latte": "./images/Latte.png",
   "Chocolate Popcorn": "./images/Chocolate Popcorn.png",
   "Lobster Meat": "./images/Lobster Tail.png",
   "Frutti di Mare Pizza": "./images/Frutti di Mare Pizza.png",
-  "Mocha": "./images/Caff├¿ Mocha.png",
+  "Mocha": "./images/Mocha.png",
   "Soothing Pad": "./images/Soothing Pad.png",
   "Lobster Soup": "./images/Lobster Soup.png",
   "Raspberry Mocha": "./images/Raspberry Mocha.png",
@@ -4795,7 +4811,7 @@
   "Coleslaw": "./images/Coleslaw.png",
   "Cotton Candy": "./images/Cotton Candy.png",
   "Hot Dog": "./images/Hot Dog.png",
-  "Affogato": "data:image/webp;base64,UklGRp4mAABXRUJQVlA4WAoAAAAQAAAAxwAAxwAAQUxQSAYJAAABsIVtt2lX0j/GmEkdq2zbNtu2bdu2bdu2u8u2bbsqlcPMMcd/kWQnJ5lz9l13REwA/h9BQ9xHEm9y8QZdIGSiQF0d+r8apIk49sgsDk1T1szD/wlYz5W8AywQiLB7hVwLNmP34lQuEcQ7gJ2iAfw4mDqA2v5o56OBg5E2wl8W2iJQ8nZ7mS4p2nY0bT8E7H3p2Q5cJ9a0mU8u9mM6hL6bNQ2jD6b8N7mK+4P9h6v8l7i7n6m6g5m5s3H2V2e3t1w1T5mY7V3P7o9O4W6QzS7Q4m5u6u3r1V2h6u6u2R1m4q6h7X7o7O6Q4o6U6d5Z4b5Y5b4a5a5Z5Y4X4W4V4U4T4S4R4Q4P4O4N4M4L4K4J4I4H4G4F4E4D4C4B4A4/3+AAAD//0JQOCAAAAABAAAAAQAAQUxQSAIAAAABQO7/AFZQOCBgAAAAMAEAnQEqyAIIAAVAfCWkAALyAP73hAD+8oEAA/vKEQAA",
+  "Affogato": "./images/Affogato.png",
   "Beetroot Salad": "./images/Beetroot Salad.png",
   "Big Sushi Roll": "./images/Big Sushi Roll.png",
   "Peach Tart": "./images/Peach Tart.png",
@@ -5012,6 +5028,331 @@
       return img;
     }
 
+    const EXACT_ARABIC_PRODUCT_NAMES = {
+  'Bread': 'خبز',
+  'Pancake': 'بان كيك',
+  'Cookie': 'كوكيز',
+  'Bacon and Eggs': 'بيض ولحم مقدد',
+  'Cheese': 'جبن',
+  'White Sugar': 'سكر أبيض',
+  'Carrot Pie': 'فطيرة الجزر',
+  'Pumpkin Pie': 'فطيرة اليقطين',
+  'Buttered Popcorn': 'فشار بالزبدة',
+  'Sweater': 'سترة',
+  'Bacon Pie': 'فطيرة اللحم المقدد',
+  'Cotton Fabric': 'قماش قطني',
+  'Hamburger': 'هامبرغر',
+  'Syrup': 'شراب السكر',
+  'Blue Woolly Hat': 'قبعة صوف زرقاء',
+  'Cotton Shirt': 'قميص قطني',
+  'Raspberry Muffin': 'مافن التوت الأحمر',
+  'Blue Sweater': 'سترة زرقاء',
+  'Carrot Cake': 'كعكة الجزر',
+  'Wooly Chaps': 'بنطال صوفي',
+  'Red Berry Cake': 'كعكة التوت الأحمر',
+  'Cream Cake': 'كعكة بالكريمة',
+  'Cheesecake': 'تشيز كيك',
+  'Chili Popcorn': 'فشار حار',
+  'Blackberry Muffin': 'مافن التوت الأسود',
+  'Carrot Juice': 'عصير الجزر',
+  'Fish Fillet': 'شرائح سمك',
+  'Fish Burger': 'برغر السمك',
+  'Apple Juice': 'عصير التفاح',
+  'Apple Pie': 'فطيرة التفاح',
+  'Fish Pie': 'فطيرة السمك',
+  'Vanilla Ice Cream': 'آيس كريم الفانيليا',
+  'Cherry Juice': 'عصير الكرز',
+  'Roasted Tomatoes': 'طماطم مشوية',
+  'Berry Juice': 'عصير التوت',
+  'Blueberry Cheesecake': 'تشيز كيك التوت الأزرق',
+  'Tomato Juice': 'عصير الطماطم',
+  'Blueberry Muffin': 'مافن التوت الأزرق',
+  'Cherry Popsicle': 'مصاصة الكرز',
+  'Refined Coal': 'فحم مكرر',
+  'Goat Cheese': 'جبن الماعز',
+  'Pizza': 'بيتزا',
+  'Feta Pie': 'فطيرة فيتا',
+  'Iron Bar': 'سبيكة حديد',
+  'Strawberry Ice Cream': 'آيس كريم الفراولة',
+  'Apple Jam': 'مربى التفاح',
+  'Baked Potato': 'بطاطس مشوية',
+  'Strawberry Cake': 'كعكة الفراولة',
+  'Casserole': 'طاجن',
+  'Chocolate Cake': 'كعكة الشوكولاتة',
+  'Raspberry Jam': 'مربى التوت الأحمر',
+  'Blackberry Jam': 'مربى التوت الأسود',
+  'Spicy Pizza': 'بيتزا حارة',
+  'Bracelet': 'سوار',
+  'Cherry Jam': 'مربى الكرز',
+  'Potato Feta Cake': 'كعكة البطاطس والفيتا',
+  'Chocolate Ice Cream': 'آيس كريم الشوكولاتة',
+  'Honey': 'عسل',
+  'Necklace': 'قلادة',
+  'Potato Bread': 'خبز البطاطس',
+  "Shepherd's Pie": 'فطيرة الراعي',
+  'Diamond Ring': 'خاتم ألماس',
+  'Honey Popcorn': 'فشار بالعسل',
+  'Fish and Chips': 'سمك وبطاطس',
+  'Iron Bracelet': 'سوار حديدي',
+  'Espresso': 'إسبريسو',
+  'Honey Apple Cake': 'كعكة التفاح بالعسل',
+  'Caffè Latte': 'لاتيه',
+  'Chocolate Popcorn': 'فشار بالشوكولاتة',
+  'Lobster Tail': 'ذيل سرطان البحر',
+  'Frutti di Mare Pizza': 'بيتزا ثمار البحر',
+  'Caffè Mocha': 'موكا',
+  'Soothing Pad': 'وسادة مهدئة',
+  'Lobster Soup': 'حساء سرطان البحر',
+  'Raspberry Mocha': 'موكا بالتوت الأحمر',
+  'Hot Chocolate': 'شوكولاتة ساخنة',
+  'Tomato Soup': 'حساء الطماطم',
+  'Beeswax': 'شمع العسل',
+  'Lobster Skewer': 'سيخ سرطان البحر',
+  'Red Scarf': 'وشاح أحمر',
+  'Strawberry Candle': 'شمعة الفراولة',
+  'Asparagus Quiche': 'كيش الهليون',
+  'Pumpkin Soup': 'حساء اليقطين',
+  'Rustic Bouquet': 'باقة ريفية',
+  'Duck Feather': 'ريش البط',
+  'Sesame Ice Cream': 'آيس كريم السمسم',
+  'Strawberry Jam': 'مربى الفراولة',
+  'Asparagus Soup': 'حساء الهليون',
+  'Caramel Apple': 'تفاح بالكراميل',
+  'Pillow': 'وسادة',
+  'Pineapple Juice': 'عصير الأناناس',
+  'Raspberry Candle': 'شمعة التوت الأحمر',
+  'Toffee': 'توفي',
+  'Fish Soup': 'حساء السمك',
+  'Bean Dip': 'غموس الفاصوليا',
+  'Chocolate': 'شوكولاتة',
+  'Fancy Cake': 'كعكة فاخرة',
+  'Soy Sauce': 'صلصة الصويا',
+  'Sushi Roll': 'لفافة سوشي',
+  'Lollipop': 'مصاصة',
+  'Bean Salad': 'سلطة الفاصوليا',
+  'Greek Salad': 'سلطة يونانية',
+  'Blanket': 'بطانية',
+  'Lobster Sushi': 'سوشي سرطان البحر',
+  'Garlic Bread': 'خبز بالثوم',
+  'Jelly Beans': 'حلوى جيلي',
+  'Olive Oil': 'زيت الزيتون',
+  'Veggie Bagel': 'بيغل بالخضار',
+  'BLT Salad': 'سلطة بيكون وخس وطماطم',
+  'Caramel Latte': 'لاتيه الكراميل',
+  'Mayonnaise': 'مايونيز',
+  'Olive Dip': 'غموس الزيتون',
+  'Peanuts': 'فول سوداني',
+  'Egg Sushi': 'سوشي البيض',
+  'Honey Peanuts': 'فول سوداني بالعسل',
+  'Berry Smoothie': 'سموذي التوت',
+  'Seafood Salad': 'سلطة المأكولات البحرية',
+  'Snack Mix': 'خليط تسالي',
+  'Bacon Toast': 'توست باللحم المقدد',
+  'Bright Bouquet': 'باقة زاهية',
+  'Cabbage Soup': 'حساء الملفوف',
+  'Chocolate Pie': 'فطيرة الشوكولاتة',
+  'Pineapple Cake': 'كعكة الأناناس',
+  'Egg Sandwich': 'ساندويتش البيض',
+  'Green Smoothie': 'سموذي أخضر',
+  'Lemon Curd': 'كريمة الليمون',
+  'Fresh Pasta': 'باستا طازجة',
+  'Grilled Asparagus': 'هليون مشوي',
+  'Lemon Pie': 'فطيرة الليمون',
+  'Pasta Salad': 'سلطة الباستا',
+  'Grilled Onion': 'بصل مشوي',
+  'Lemon Cake': 'كعكة الليمون',
+  'Lemon Essential Oil': 'زيت الليمون العطري',
+  'Peanut Butter Milkshake': 'ميلك شيك زبدة الفول السوداني',
+  'Fried Rice': 'أرز مقلي',
+  'Honey Toast': 'توست بالعسل',
+  'Tomato Sauce': 'صلصة الطماطم',
+  'Blueberry Chutney': 'تشاتني التوت الأزرق',
+  'Cloche Hat': 'قبعة كلوش',
+  'Cucumber Smoothie': 'سموذي الخيار',
+  'Yogurt Smoothie': 'سموذي الزبادي',
+  'Flower Shawl': 'شال مزهر',
+  'Orange Juice': 'عصير البرتقال',
+  'Peanut Butter and Jelly Sandwich': 'ساندويتش زبدة الفول السوداني والمربى',
+  'Gnocchi': 'نيوكي',
+  'Lemon Candle': 'شمعة الليمون',
+  'Onion Soup': 'حساء البصل',
+  'Top Hat': 'قبعة عالية',
+  'Winter Veggies': 'خضار شتوية',
+  'Gracious Bouquet': 'باقة أنيقة',
+  'Noodle Soup': 'حساء النودلز',
+  'Rice Noodles': 'نودلز الأرز',
+  'Chamomile Essential Oil': 'زيت البابونج العطري',
+  'Marmalade': 'مربى البرتقال',
+  'Sun Hat': 'قبعة شمس',
+  'Veggie Lasagna': 'لازانيا بالخضار',
+  'Veggie Platter': 'طبق خضار',
+  'Coleslaw': 'سلطة كول سلو',
+  'Cotton Candy': 'غزل البنات',
+  'Hot Dog': 'هوت دوغ',
+  'Affogato': 'أفوجاتو',
+  'Beetroot Salad': 'سلطة الشمندر',
+  'Big Sushi Roll': 'لفافة سوشي كبيرة',
+  'Peach Tart': 'تارت الخوخ',
+  'Plain Donut': 'دونات سادة',
+  'Tofu Dog': 'هوت دوغ التوفو',
+  'Colourful Omelet': 'أومليت ملوّن',
+  'Salsa': 'سالسا',
+  'Spicy Bean Taco': 'تاكو فاصوليا حار',
+  'Spring Omelet': 'أومليت الربيع',
+  'Taco': 'تاكو',
+  'Corn Dog': 'كورن دوغ',
+  'Orange Sorbet': 'سوربيه البرتقال',
+  'Potato Soup': 'حساء البطاطس',
+  'Sesame Brittle': 'حلوى السمسم المقرمشة',
+  'Summer Rolls': 'لفافات صيفية',
+  'Cheese Omelet': 'أومليت الجبن',
+  'Cucumber Sandwich': 'ساندويتش الخيار',
+  'Fish Taco': 'تاكو السمك',
+  'Lobster Pasta': 'باستا سرطان البحر',
+  'Peach Jam': 'مربى الخوخ',
+  'Spicy Fish': 'سمك حار',
+  'Sprinkled Donut': 'دونات مرشوشة',
+  'Ginger Essential Oil': 'زيت الزنجبيل العطري',
+  'Green Tea': 'شاي أخضر',
+  'Onion Dog': 'هوت دوغ بالبصل',
+  'Stuffed Peppers': 'فلفل محشي',
+  'Bell Pepper Soup': 'حساء الفلفل الحلو',
+  'Chocolate Fondue': 'فوندو الشوكولاتة',
+  'Milk Tea': 'شاي بالحليب',
+  'Crunchy Donut': 'دونات مقرمشة',
+  'Fruit Salad': 'سلطة فواكه',
+  'Quesadilla': 'كيساديلا',
+  'Broccoli Pasta': 'باستا البروكلي',
+  'Honey Tea': 'شاي بالعسل',
+  'Pasta Carbonara': 'باستا كاربونارا',
+  'Peach Ice Cream': 'آيس كريم الخوخ',
+  'Rice Omelet': 'أومليت الأرز',
+  'Colourful Candles': 'شموع ملوّنة',
+  'Grape Juice': 'عصير العنب',
+  'Honey Soap': 'صابون العسل',
+  'Lemon Lotion': 'لوشن الليمون',
+  'Onion Melt': 'ساندويتش بصل مذاب',
+  'Summer Salad': 'سلطة صيفية',
+  'Grape Jam': 'مربى العنب',
+  'Mint Essential Oil': 'زيت النعناع العطري',
+  'Mint Ice Cream': 'آيس كريم النعناع',
+  'Bacon Fondue': 'فوندو اللحم المقدد',
+  'Cream Donut': 'دونات بالكريمة',
+  'Flower Crown': 'إكليل زهور',
+  'Gingerbread Cookie': 'كوكيز الزنجبيل',
+  'Lemon Tea': 'شاي الليمون',
+  'Peanut Noodles': 'نودلز بالفول السوداني',
+  'Bacon Fries': 'بطاطس باللحم المقدد',
+  'Broccoli Soup': 'حساء البروكلي',
+  'Nachos': 'ناتشوز',
+  'Potato Omelet': 'أومليت البطاطس',
+  'Spicy Pasta': 'باستا حارة',
+  'Apple Ginger Tea': 'شاي التفاح والزنجبيل',
+  'Bacon Donut': 'دونات باللحم المقدد',
+  'Iced Banana Latte': 'لاتيه الموز المثلج',
+  'Mixed Smoothie': 'سموذي مشكّل',
+  'Passion Fruit Juice': 'عصير فاكهة العاطفة',
+  'Fruit Cake': 'كعكة الفواكه',
+  'Mushroom Salad': 'سلطة الفطر',
+  'Orange Tea': 'شاي البرتقال',
+  'Tofu Stir Fry': 'توفو مقلي سريعًا',
+  'Candy Bouquet': 'باقة حلوى',
+  'Grilled Eggplant': 'باذنجان مشوي',
+  'Banana Bread': 'خبز الموز',
+  'Cheese Fondue': 'فوندو الجبن',
+  'Hand Pies': 'فطائر يدوية',
+  'Pickles': 'مخلل',
+  'Birthday Bouquet': 'باقة عيد ميلاد',
+  'Goat Cheese Toast': 'توست بجبن الماعز',
+  'Ice Tea': 'شاي مثلج',
+  'Passion Fruit Pie': 'فطيرة فاكهة العاطفة',
+  'Watermelon Juice': 'عصير البطيخ',
+  'Exfoliating Soap': 'صابون مقشّر',
+  'Filled Donut': 'دونات محشوة',
+  'Black Sesame Smoothie': 'سموذي السمسم الأسود',
+  'Soft Bouquet': 'باقة ناعمة',
+  'Banana Pancakes': 'بان كيك الموز',
+  'Plum Jam': 'مربى البرقوق',
+  'Tea Pot': 'إبريق شاي',
+  'Canned Fish': 'سمك معلب',
+  'Chocolate Roll': 'لفافة الشوكولاتة',
+  'Floral Candle': 'شمعة زهرية',
+  'Hummus': 'حمص',
+  'Banana Split': 'بانانا سبليت',
+  'Fish Skewer': 'سيخ سمك',
+  'Passion Fruit Jam': 'مربى فاكهة العاطفة',
+  'Potted Plant': 'نبتة مزروعة',
+  'Mango Juice': 'عصير المانجو',
+  'Mint Tea': 'شاي النعناع',
+  'Mushroom Pot Pie': 'فطيرة الفطر',
+  'Chili Poppers': 'مقبلات الفلفل الحار',
+  'Falafel': 'فلافل',
+  'Flower Pendant': 'قلادة زهور',
+  'Kimchi': 'كيمتشي',
+  'Clay Mug': 'كوب فخاري',
+  'Eggplant Parmesan': 'بارميزان الباذنجان',
+  'Honey Face Mask': 'قناع وجه بالعسل',
+  'Rich Fudge': 'فدج غني',
+  'Chamomile Tea': 'شاي البابونج',
+  'Cocoa Smoothie': 'سموذي الكاكاو',
+  'Fried Candy Bar': 'لوح حلوى مقلي',
+  'Tart Dressing': 'صلصة التارت',
+  'Tropical Fondue': 'فوندو استوائي',
+  'Macaroon': 'ماكارون',
+  'Mushroom Pasta': 'باستا الفطر',
+  'Coconut Ice Cream': 'آيس كريم جوز الهند',
+  'Dried Fruit': 'فواكه مجففة',
+  'Mint Fudge': 'فدج النعناع',
+  'Plum Smoothie': 'سموذي البرقوق',
+  'Plain Yogurt': 'زبادي سادة',
+  'Samosa': 'سمبوسة',
+  'Chili Fudge': 'فدج حار',
+  'Guava Compote': 'كومبوت الجوافة',
+  'Guava Juice': 'عصير الجوافة',
+  'Mushroom Soup': 'حساء الفطر',
+  'Tropical Smoothie': 'سموذي استوائي',
+  'Strawberry Yogurt': 'زبادي الفراولة',
+  'Chickpea Stew': 'يخنة الحمص',
+  'Fruit Sorbet': 'سوربيه الفواكه',
+  'Veggie Bouquet': 'باقة خضار',
+  'Pomegranate Tea': 'شاي الرمان',
+  'Lemon Fudge': 'فدج الليمون',
+  'Pomegranate Cake': 'كعكة الرمان',
+  'Chili Stew': 'يخنة حارة',
+  'Guava Cupcake': 'كب كيك الجوافة',
+  'Hummus Wrap': 'لفافة حمص',
+  'Plain Cupcake': 'كب كيك سادة',
+  'Tropical Yogurt': 'زبادي استوائي',
+  'Fresh Diffuser': 'ناشر عطري منعش',
+  'Rice Ball': 'كرة أرز',
+  'Peanut Fudge': 'فدج الفول السوداني',
+  'Tropical Cupcake': 'كب كيك استوائي',
+  'Winter Stew': 'يخنة شتوية',
+  'Zesty Perfume': 'عطر منعش',
+  'Berry Waffles': 'وافل التوت',
+  'Cookie Cupcake': 'كب كيك الكوكيز',
+  'Plain Waffles': 'وافل سادة',
+  'Calming Diffuser': 'ناشر عطري مهدئ',
+  'Chocolate Waffles': 'وافل الشوكولاتة',
+  'Orange Salad': 'سلطة البرتقال',
+  'Blueberry Waffles': 'وافل التوت الأزرق',
+  'Apple Porridge': 'عصيدة التفاح',
+  'Breakfast Bowl': 'وعاء الإفطار',
+  'Breakfast Waffles': 'وافل الإفطار',
+  'Pineapple Coconut Bars': 'ألواح الأناناس وجوز الهند',
+  'Sweet Porridge': 'عصيدة حلوة',
+  'Rich Soaps': 'أنواع صابون غنية',
+  'Fresh Porridges': 'أنواع عصيدة طازجة',
+  'Vanilla Milkshake': 'ميلك شيك الفانيليا',
+  'Mocha Milkshake': 'ميلك شيك الموكا',
+  'Fruity Milkshake': 'ميلك شيك الفواكه'
+    };
+
+    function getDisplayName(product) {
+      if (currentLang === 'en') return product.official_name;
+      return EXACT_ARABIC_PRODUCT_NAMES[product.official_name] || EXACT_ARABIC_PRODUCT_NAMES[product.input_name] || product.name_ar || product.official_name;
+    }
+
     const products = productData
       .map((item, index) => ({
         id: `prod_${index}`,
@@ -5088,9 +5429,7 @@
 
       const nameEl = document.createElement('div');
       nameEl.className = 'product-name';
-      nameEl.innerHTML = currentLang === 'ar'
-        ? `${product.official_name}<div style="font-size:10px;opacity:.72;margin-top:3px">${product.name_ar || ''}</div>`
-        : `${product.official_name}<div style="font-size:10px;opacity:.72;margin-top:3px">${product.machine}</div>`;
+      nameEl.textContent = getDisplayName(product);
       card.appendChild(nameEl);
 
       const qtyBox = document.createElement('div');
@@ -5178,7 +5517,7 @@
     function updateSummary() {
       const total = totalSelected();
       const target = Number(el('target-qty').value) || 0;
-      const hasBadgeId = !!(el('user-id')?.value || '').trim();
+      const hasBadgeId = !!((el('header-user-input')?.value || '').trim());
       animateNumber(el('current-total'), total, 260);
       animateNumber(el('target-display'), target, 220);
             el('progress-fill').style.width = target > 0 ? `${Math.min(100, (total / target) * 100)}%` : '0%';
@@ -5267,7 +5606,7 @@
     }
 
     function openSummaryModal() {
-      const badgeId = (el('user-id')?.value || '').trim();
+      const badgeId = ((el('header-user-input')?.value || '').trim());
       if (!badgeId) {
         showToast('اكتب البطاقة التعريفية أولًا');
         pulseButton('view-list-btn');
@@ -5280,7 +5619,7 @@
         return;
       }
       el('list-content').innerHTML = selected
-        .map((item) => `<div class="flex items-center justify-between gap-3 p-2 rounded-xl bg-gray-50 text-black"><span>${item.official_name}<div style="font-size:10px;opacity:.72">${item.name_ar || ''}</div></span><span>${item.qty}</span></div>`)
+        .map((item) => `<div class="flex items-center justify-between gap-3 p-2 rounded-xl bg-gray-50 text-black"><span>${getDisplayName(item)}</span><span>${item.qty}</span></div>`)
         .join('');
       el('product-count').textContent = String(selected.length);
       el('total-qty-modal').textContent = String(totalSelected());
@@ -5295,7 +5634,7 @@
     }
 
     async function copyOrderCode() {
-      const badgeId = (el('user-id')?.value || '').trim();
+      const badgeId = ((el('header-user-input')?.value || '').trim());
       if (!badgeId) {
         showToast('اكتب البطاقة التعريفية أولًا');
         pulseButton('copy-code-btn');
@@ -5456,25 +5795,12 @@
     }
 
     function setupEvents() {
-      el('user-id').addEventListener('input', () => {
-        const value = (el('user-id').value || '').trim();
-        if (el('header-user-input') !== document.activeElement) {
-          el('header-user-input').value = value || '#000';
-        }
-        updateSummary();
-      });
       el('header-user-input').addEventListener('input', () => {
-        const rawValue = el('header-user-input').value;
-        el('user-id').value = rawValue === '#000' ? '' : rawValue;
         updateSummary();
       });
-      el('header-user-input').addEventListener('focus', () => {
-        if (el('header-user-input').value === '#000') el('header-user-input').value = '';
-      });
+      
       el('header-user-input').addEventListener('blur', () => {
-        const value = (el('header-user-input').value || '').trim();
-        el('header-user-input').value = value || '#000';
-        el('user-id').value = value;
+        el('header-user-input').value = (el('header-user-input').value || '').trim();
         updateSummary();
       });
       el('product-search').addEventListener('input', () => {
@@ -5519,6 +5845,7 @@
 
       el('lang-btn').addEventListener('click', () => {
         currentLang = currentLang === 'ar' ? 'en' : 'ar';
+        document.documentElement.lang = currentLang === 'ar' ? 'ar' : 'en';
         document.body.classList.toggle('en-mode', currentLang === 'en');
         el('lang-btn').textContent = currentLang.toUpperCase();
         generateMachineFilters();
@@ -5563,6 +5890,7 @@
       console.assert(INFERRED_MACHINE_RULES.every((rule) => Array.isArray(rule) && rule.length === 2 && rule[0] instanceof RegExp && typeof rule[1] === 'string'), 'Every machine inference rule should be a [RegExp, string] tuple');
       console.assert(products.length === 317, 'Should load all 317 products from the uploaded JSON');
       console.assert(getCurrentStep() === 10, 'Default step should be 10');
+      console.assert(totalSelected() === 0, 'Selected total should start at 0');
       selection = { prod_0: 20, prod_1: 10 };
       console.assert(totalSelected() === 30, 'Total should match selected quantities');
       const joined = ['A', 'B'].join('\n');
@@ -5575,11 +5903,11 @@
       console.assert(resolveMachine({ name: { en: 'Berry Smoothie' }, machine: 'Other' }) === 'Smoothie Maker', 'Smoothie rule should work');
       console.assert(resolveMachine({ name: { en: 'Fish and Chips' }, machine: 'Other' }) === 'Deep Fryer', 'Specific override should work');
       console.assert(countOtherProducts() === 0, 'No products should remain in Other');
-      el('user-id').value = '';
+      el('header-user-input').value = '';
       updateSummary();
       console.assert(el('view-list-btn').classList.contains('btn-disabled'), 'Summary button should stay disabled without badge id');
       console.assert(el('copy-code-btn').classList.contains('btn-disabled'), 'Copy button should stay disabled without badge id');
-      el('user-id').value = '123';
+      el('header-user-input').value = '';
       updateSummary();
       selection = {};
       console.assert(svgPlaceholder('Bread', '🍞').startsWith('data:image/svg+xml'), 'Placeholder should be a data URL');
@@ -5598,13 +5926,13 @@
 
     generateMachineFilters();
     renderGrid();
-    el('header-user-input').value = (el('user-id')?.value || '').trim() || '#000';
+    el('header-user-input').value = '';
     syncMobileTools();
     setupEvents();
     updateSummary();
     syncMachinesCarouselState();
     runBasicTests();
-    console.info('Explicit local product image map enabled.');
+    console.info('Fixed top badge field listeners after removing the lower card.');
   </script>
 </body>
 </html>
